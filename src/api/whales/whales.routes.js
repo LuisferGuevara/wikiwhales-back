@@ -51,7 +51,7 @@ router.post("/create", upload.single("image"), async (req, res) => {
 router.put("/edit/:id", upload.single("image"), async (req, res, next) => {
   try {
     const id = req.params.id;
-    const whale = req.body;
+    const whale = req.body;s
     const whaleToEdit = await Whale.findById(id);
     if (req.file) {
       if (whaleToEdit.image) {

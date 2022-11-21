@@ -5,7 +5,7 @@ const whales = [
   {
     name: "Bowhead Whale",
     image:
-      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/blue-sperm-whale-watercolor-illustration-home-decor-joanna-szmerdt.jpg",
+      "https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/Bowhead-Whale.png",
     scientificName: "Balaena mysticetus",
     length: "14-18 meters",
     weight: "Up to 100 tonnes",
@@ -15,7 +15,7 @@ const whales = [
   {
     name: "Amazon River Dolphin",
     image:
-      "https://www.seekpng.com/png/detail/419-4192720_amazon-river-dolphin-white-dolphin-in-amazon.png",
+      "https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/Amazon-River-Dolphin--Pink-Animal-Water-Mammal-MPS-KS2.png",
     scientificName: "Inia geoffrensis",
     length: "2.5 meters",
     weight: "185kg",
@@ -24,7 +24,7 @@ const whales = [
   {
     name: "Southern right Whale",
     image:
-      "https://i.pinimg.com/736x/3a/8b/5b/3a8b5be25a6a430784784903241419a0--baleen-whales-image-editing.jpg",
+      "https://coastalstudies.org/wp-content/uploads/2013/11/right-whale.gif",
     scientificName: "Eubalaena australis",
     length: "15 meters",
     weight: "80-90 tonnes",
@@ -32,7 +32,8 @@ const whales = [
   },
   {
     name: "Blue Whale",
-    image: "https://t3.ftcdn.net/jpg/04/33/74/02/360_F_433740233_HK0dYo0qqEE0UrGC37ORZyCTWgeklcpt.jpg",
+    image: 
+    "https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/blue-whale.png",
     scientificName: "Balaenoptera musculus",
     length: "29 meters",
     weight: "173 tonnes",
@@ -40,7 +41,8 @@ const whales = [
   },
   {
     name: "Fin Whale",
-    image: "https://media.fisheries.noaa.gov/styles/original/s3/2020-09/640x4270-fin-whale-v2.jpg?itok=q6QDTYa_",
+    image: 
+    "https://i.pinimg.com/originals/1f/c2/66/1fc2667e18c241e1baba34b832636d05.png",
     scientificName: "Balaenoptera physalus",
     length: "25.9 meters",
     weight: "74 tonnes",
@@ -48,7 +50,7 @@ const whales = [
   },
   {
     name: "Sei whale",
-    image: "https://images.squarespace-cdn.com/content/v1/595bcd2e86e6c029dc28ac1d/1502131665205-6DUEN4BF8CMEAFJVKUC8/SeiWhale-Illustration.jpg",
+    image: "https://lakitours.com/wp-content/uploads/2021/05/sejwal.png",
     scientificName: "Balaenoptera borealis",
     length: "19.5 meters",
     weight: "28 tonnes",
@@ -56,7 +58,7 @@ const whales = [
   },
   {
     name: "Humpback whale",
-    image: "https://i.pinimg.com/originals/c3/ca/75/c3ca75efd38c493d2dffa3185b15f28b.jpg",
+    image: "https://www.pnguniverse.com/wp-content/uploads/2021/11/Ballena-jorobada-bdc91a1a.png",
     scientificName: "Megaptera novaeangliae",
     length: "12-16 meters",
     weight: "25-30 tonnes",
@@ -71,8 +73,8 @@ const whales = [
     description: "Hector’s dolphin is one of the four [and the most prominent] dolphin species in the genus Cephalorhynchus. Not only are they the smallest, but also one of the rarest dolphins on Earth.Identifying Hector’s dolphin is easy because of its distinctive, round dorsal fin. They are overall pale grey in appearance. The critically endangered Maui dolphin is a subspecies of Hector’s dolphin and is endemic to New Zealand.",
   },
   {
-    name: "Short Finned Pilot Whale",
-    image: "https://www.nicepng.com/png/detail/38-382104_whale-sticker-short-finned-pilot-whale.png",
+    name: "Short Finned Pilot",
+    image: "https://whaleopedia.org/animalfund/wp-content/uploads/2013/10/Long-finned-Pilot-Whale-1024x280.png",
     scientificName: "Globicephala macrorhynchus",
     length: "Globicephala macrorhynchus",
     weight: "3 tonnes",
@@ -80,7 +82,7 @@ const whales = [
   },
   {
     name: "Killer Whale",
-    image: "https://www.naturepl.com/cache/pcache2/01475195.jpg",
+    image: "https://media.fisheries.noaa.gov/styles/original/s3/dam-migration/640x427-killer-whale.png?itok=mpHhEa6Y",
     scientificName: "Orcinus orca",
     length: "6-8 meters",
     weight: "6 tonnes",
@@ -88,7 +90,7 @@ const whales = [
   },
   {
     name: "Beluga Whale",
-    image: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-white-beluga-whale-illustration-ziva-viviana-doria.jpg",
+    image: "https://cdn.pixabay.com/photo/2020/09/30/07/33/beluga-whale-5614827_960_720.png",
     scientificName: "Delphinapterus leucas",
     length: "5.5 meters",
     weight: "1.9 tonnes",
@@ -96,7 +98,7 @@ const whales = [
   },
   {
     name: "Narwhal",
-    image: "https://i.pinimg.com/originals/d2/31/39/d23139a589de59fd5a1196e66aaa6bd5.jpg",
+    image: "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/4800/narwhal-clipart-xl.png",
     scientificName: "Monodon monoceros",
     length: "5.5 meters",
     weight: "1.6 tonnes",
@@ -104,7 +106,7 @@ const whales = [
   },
   {
     name: "Sperm Whale",
-    image: "https://images.squarespace-cdn.com/content/v1/595bcd2e86e6c029dc28ac1d/1502131704915-JFL7Z92DX7GEVXPRYMF0/SpermWhale-Illustration.jpg",
+    image: "https://media.fisheries.noaa.gov/styles/original/s3/dam-migration/640x427-sperm-whale.png?itok=IBxI7-oi",
     scientificName: "Physeter macrocephalus",
     length: "16.20 meters",
     weight: "41 tonnes",
@@ -112,7 +114,7 @@ const whales = [
   },
   {
     name: "Bottlenose Dolphin",
-    image: "https://t3.ftcdn.net/jpg/03/16/42/94/360_F_316429482_VhfgoItetnCfXAaKT5Lckplyax7opfXA.jpg",
+    image: "https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/Bottlenose-Dolphin.png",
     scientificName: "Delphinus truncatus",
     length: "4 meters",
     weight: "300 kilos",
@@ -120,7 +122,7 @@ const whales = [
   },
   {
     name: "Vaquita",
-    image: "https://goldenliontamarin.files.wordpress.com/2014/02/ht72.jpg",
+    image: "https://images.twinkl.co.uk/tr/image/upload/t_illustration/illustation/vaquita.png",
     scientificName: "Phocoena sinus",
     length: "1.35 m",
     weight: "200 kilos",

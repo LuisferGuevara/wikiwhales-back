@@ -12,7 +12,7 @@ const whaleSchema = new Schema(
     },
     scientificName: { type: String, required: false, trim: true },
     length: { type: String, required: false },
-    wieght: { type: String, required: false },
+    weight: { type: String, required: false },
     description: { type: String, requiered: true, trim: true },
   },
   {
