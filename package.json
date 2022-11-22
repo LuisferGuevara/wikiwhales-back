@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "resetWhales": "node ./src/utils/seeds/whales.seeds.js",
+    "resetCars": "node ./src/utils/seeds/cars.seeds.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

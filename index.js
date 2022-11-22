@@ -1,7 +1,7 @@
 const express = require("express");
 const indexRoutes = require("./src/api/index/index.routes");
 
-const whalesRoutes = require("./src/api/whales/whales.routes");
+const carsRoutes = require("./src/api/cars/car.routes");
 const userRouter = require("./src/api/users/user.routes");
 const db = require("./src/utils/database/db");
 const cors = require('cors');
@@ -28,7 +28,7 @@ server.use(express.json({ limit: "5mb" }));
 server.use(express.urlencoded({ extended: false }));
 
 server.use("/", indexRoutes);
-server.use("/whales", whalesRoutes);
+server.use("/cars", carsRoutes);
 
 
 server.use("/users", userRouter);

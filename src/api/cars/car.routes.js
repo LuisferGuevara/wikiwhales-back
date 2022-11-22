@@ -1,5 +1,5 @@
 const express = require("express");
-const Whale = require("./whale.model");
+const Car = require("./cars.model");
 const upload = require("../middlewares/file");
 const { deleteFile } = require("../middlewares/deleteFile");
 const { isAuth, isAdmin } = require("../middlewares/auth");
@@ -8,8 +8,8 @@ require("dotenv").config();
 
 router.get("/", async (req, res, next) => {
   try {
-    const allWhales = await Whale.find().lean();
-    return res.status(200).json(allWhales);
+    const allCars = await Car.find().lean();
+    return res.status(200).json(allCars);
   } catch (error) {
     return next(error);
   }
@@ -18,8 +18,8 @@ router.get("/", async (req, res, next) => {
 router.get("/:id", async (req, res, next) => {
   try {
     const id = req.params.id;
-    const whaleToFind = await Whale.findById(id);
-    return res.status(200).json(whaleToFind);
+    const carToFind = await Car.findById(id);
+    return res.status(200).json(carToFind);
   } catch (error) {
     return next(error);
   }
@@ -27,8 +27,8 @@ router.get("/:id", async (req, res, next) => {
 router.get("/getbyname/:name", async (req, res, next) => {
   try {
     const name = req.params.name;
-    const whaleToFind = await Whale.findOne({ name: name });
-    return res.status(200).json(whaleToFind);
+    const carToFind = await Car.findOne({ name: name });
+    return res.status(200).json(carToFind);
   } catch (error) {
     return next(error);
   }
@@ -36,37 +36,37 @@ router.get("/getbyname/:name", async (req, res, next) => {
 
 router.post("/create", upload.single("image"), async (req, res) => {
   try {
-    const whale = req.body;
+    const car = req.body;
     if (req.file) {
-      whale.image = req.file.path;
+      car.image = req.file.path;
     }
-    const newWhale = new Whale(whale);
-    const whaleCreated = await newWhale.save();
-    return res.status(200).json(whaleCreated);
+    const newCar = new Car(car);
+    const carCreated = await newCar.save();
+    return res.status(200).json(carCreated);
   } catch (error) {
-    return res.status(500).json("Error creating whale");
+    return res.status(500).json("Error creating car");
   }
 });
 
 router.put("/edit/:id", upload.single("image"), async (req, res, next) => {
   try {
     const id = req.params.id;
-    const whale = req.body;
-    const whaleToEdit = await Whale.findById(id);
+    const car = req.body;
+    const carToEdit = await Car.findById(id);
     if (req.file) {
-      if (whaleToEdit.image) {
-        deleteFile(whaleToEdit.image);
+      if (carToEdit.image) {
+        deleteFile(carToEdit.image);
       }
-      whale.image = req.file.path;
+      car.image = req.file.path;
     }
-    const whaleModification = new Whale(whale);
-    whaleModification._id = id;
-    const whaleModificated = await Whale.findByIdAndUpdate(id, whaleModification, {
+    const carModification = new Car(car);
+   carModification._id = id;
+    const carModificated = await Car.findByIdAndUpdate(id, carModification, {
       returnOriginal: false,
     });
     return res.status(200).json({
-      mensaje: "Whale modified!",
-      whaleModificated: whaleModificated,
+      mensaje: "Car modified!",
+      carModificated: carModificated,
     });
   } catch (error) {
     return next(error);
@@ -76,10 +76,10 @@ router.put("/edit/:id", upload.single("image"), async (req, res, next) => {
 router.delete("/delete/:id", async (req, res) => {
   try {
     const id = req.params.id;
-    const whaleToDelete = await Whale.findByIdAndDelete(id);
-    return res.status(200).json("Whale deleted");
+    const carToDelete = await Car.findByIdAndDelete(id);
+    return res.status(200).json("Car deleted");
   } catch (error) {
-    return res.status(500).json("Error deleting whale");
+    return res.status(500).json("Error deleting car");
   }
 });
 
